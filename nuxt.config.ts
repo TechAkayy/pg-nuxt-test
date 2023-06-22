@@ -1,4 +1,4 @@
-import { fileURLToPath, URL } from 'node:url'
+// import { fileURLToPath, URL } from 'node:url'
 
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -17,15 +17,15 @@ export default defineNuxtConfig({
     liveDesigner: {
       iconPreferredCase: 'iconify', // nuxt-icon uses iconfiy format for icon names
       devtoolsKey: 'devtools', // see plugins/devtools.client.ts
-      plugins: [
-        {
-          name: 'My Awesome Lib 3.0',
-          key: 'my-awesome-lib',
-          pluginPath: fileURLToPath(
-            new URL('./my-awesome-lib/web-types.json', import.meta.url),
-          ),
-        },
-      ],
+      // plugins: [
+      //   {
+      //     name: 'My Awesome Lib 3.0',
+      //     key: 'my-awesome-lib',
+      //     pluginPath: fileURLToPath(
+      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //     ),
+      //   },
+      // ],
     },
   },
 })
